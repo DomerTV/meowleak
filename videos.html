@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ссылки - MeowLeak</title>
+    <title>MeowLeak</title>
     <style>
         body {
             margin: 0;
@@ -24,9 +24,6 @@
         header h1 {
             margin: 0;
             font-size: 24px;
-            font-weight: bold;
-            text-align: center;
-            width: 100%;
         }
         .menu-button {
             background-color: #444;
@@ -41,22 +38,46 @@
         .menu-button:hover {
             background-color: #555;
         }
-        .link-list {
-            padding: 20px;
+        .links-container {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 20px;
+            margin: 20px;
+        }
+        .link {
+            background-color: #333;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
             align-items: center;
         }
-        .link-list a {
-            color: #007BFF;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            transition: color 0.3s ease;
+        .link h2 {
+            margin: 0;
+            color: #f4f4f4;
+            font-size: 20px;
         }
-        .link-list a:hover {
-            color: #0056b3;
+        .link p {
+            font-size: 16px;
+            color: #ccc;
+            text-align: center;
+            margin: 10px 0;
+        }
+        .link a {
+            background-color: #555;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .link a:hover {
+            background-color: #666;
         }
         footer {
             text-align: center;
@@ -64,6 +85,9 @@
             background-color: #333;
             color: #aaa;
             font-size: 14px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
             margin-top: 20px;
         }
     </style>
@@ -71,7 +95,7 @@
 <body>
     <header>
         <img src="logo.png" alt="MeowLeak">
-        <h1>MeowLeak</h1>
+        <h1>MeowLeak - Видео</h1>
         <div>
             <button class="menu-button" onclick="location.href='index.html'">Главная</button>
             <button class="menu-button" onclick="location.href='videos.html'">Видео</button>
@@ -79,12 +103,32 @@
     </header>
 
     <main>
-        <div class="link-list">
-            <a href="video1.html">Видео 1: Название видео</a>
-            <a href="video2.html">Видео 2: Название видео</a>
-            <a href="video3.html">Видео 3: Название видео</a>
-            <a href="video4.html">Видео 4: Название видео</a>
-            <a href="video5.html">Видео 5: Название видео</a>
+        <div class="links-container">
+            <div class="link">
+                <h2>Фото создания шоу</h2>
+                <p>Посмотрите все тайны создания Шоу Джинджера тут!</p>
+                <a href="video1.html">Перейти к видео</a>
+            </div>
+
+            <div class="link">
+                <h2>Заготовка 2</h2>
+                <p>...</p>
+                <a href="video2.html">Перейти к видео</a>
+            </div>
+
+            <div class="link">
+                <h2>Заготовка 3</h2>
+                <p>...</p>
+                <a href="video3.html">Перейти к видео</a>
+            </div>
+			
+			<div class="link">
+                <h2>Заготовка 4</h2>
+                <p>...</p>
+                <a href="video3.html">Перейти к видео</a>
+            </div>
+
+            <!-- Добавьте дополнительные блоки с видео, как нужно -->
         </div>
     </main>
 
